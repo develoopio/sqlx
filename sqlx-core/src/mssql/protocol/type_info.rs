@@ -120,6 +120,7 @@ impl TypeInfo {
                     0x0409 => encoding_rs::WINDOWS_1252,
                     0x1032 => encoding_rs::WINDOWS_1253,
                     locale => {
+                        println!("{:?}", locale);
                         return Err(err_protocol!("unsupported locale 0x{:?}", locale));
                     }
                 })
