@@ -94,7 +94,7 @@ bstr = [ "sqlx-core/bstr" ]
 git2 = [ "sqlx-core/git2" ]
 
 [dependencies]
-sqlx-core = { version = "=0.4.2", path = "sqlx-core", default-features = false }
+sqlx-core = { git = "https://github.com/develoopio/sqlx.git", path = "sqlx-core", default-features = false }
 sqlx-macros = { version = "=0.4.2", path = "sqlx-macros", default-features = false, optional = true }
 
 [dev-dependencies]
